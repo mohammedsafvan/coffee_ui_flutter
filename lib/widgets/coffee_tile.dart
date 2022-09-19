@@ -21,8 +21,8 @@ class CoffeeTile extends StatelessWidget {
       padding: const EdgeInsets.only(left: 10.0, bottom: 15, right: 10),
       child: InkWell(
         onTap: () {
-          Navigator.of(context)
-              .push(MaterialPageRoute(builder: (context) => DetailsPage()));
+          Navigator.of(context).push(
+              MaterialPageRoute(builder: (context) => const DetailsPage()));
         },
         child: Container(
           padding: const EdgeInsets.all(12),
@@ -42,12 +42,11 @@ class CoffeeTile extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
                 child: Image.asset(
                   imgPath,
-                  // height: 150,
                   fit: BoxFit.fill,
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 14.0),
+                padding: const EdgeInsets.symmetric(vertical: 8.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -85,7 +84,7 @@ class CoffeeTile extends StatelessWidget {
                       height: 40,
                       width: 40,
                       decoration: BoxDecoration(
-                          color: Color(0xffd17842),
+                          color: const Color(0xffd17842),
                           borderRadius: BorderRadius.circular(13)),
                       child: const Icon(Icons.add_rounded),
                     )

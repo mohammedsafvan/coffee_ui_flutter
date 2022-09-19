@@ -44,8 +44,9 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.transparent,
       ),
       bottomNavigationBar: BottomNavigationBar(
-          selectedItemColor: Color(0xffd17842),
-          backgroundColor: Color(0xFF0C0F14),
+        
+          selectedItemColor: const Color(0xffd17842),
+          backgroundColor: const Color(0xFF191719),
           items: const [
             BottomNavigationBarItem(icon: Icon(Icons.home_rounded), label: ''),
             BottomNavigationBarItem(
@@ -101,8 +102,8 @@ class _HomePageState extends State<HomePage> {
                           onTap: () => coffeeTypeSelected(index),
                         );
                       })),
-              SizedBox(
-                height: 20,
+              const SizedBox(
+                height: 15,
               ),
               SizedBox(
                 width: double.infinity,

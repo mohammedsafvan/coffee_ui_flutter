@@ -5,8 +5,8 @@ class DetailsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(child: Text("Details Page")),
+    return const Scaffold(
+      body: Center(child: Text("Details Page")),
     );
   }
 }

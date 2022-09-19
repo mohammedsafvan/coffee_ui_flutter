@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         theme: ThemeData(
           textTheme: GoogleFonts.poppinsTextTheme(),
-          scaffoldBackgroundColor: Color(0xFF0C0F14),
+          scaffoldBackgroundColor: const Color(0xFF0C0F14),
           brightness: Brightness.dark,
           primarySwatch: Colors.orange,
         ),
